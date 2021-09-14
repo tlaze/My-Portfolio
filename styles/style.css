@@ -28,5 +28,8 @@
 
 .navLink{
     color:turquoise
+}
 
+.imageBoard{
+    border:5px solid red;
 }
