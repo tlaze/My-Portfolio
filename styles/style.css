@@ -1,6 +1,7 @@
 /* variables */
 :root{
     --navBG: rgb(49,52,61); /*variable for background color in nav bar*/
+    --titleFont:rgb(70,89,120); /*Title font colors*/
 }
 /* nav bar container */
 .flexBox{
@@ -58,7 +59,7 @@
     display:flex;
     justify-content: center;
     flex-flow: row wrap;
-    height: 500px;
+    height: 300px; /*delete when content selection complete*/
 
 }
 
@@ -81,17 +82,25 @@
 /* Title Boxes */
 .sectionTitle{
     flex:none;
-    width: 10%;
-
+    width: 20%;
 }
 
 /* Content Boxes */
 .sectionContent{
     flex:none;
-    width: 80%;
+    width: 75%;
 
 }
 
+/* Edits Text in Title Sections */
+.titleText{
+    margin-right: 10px;
+    color:var(--titleFont);
+    font-size: 2em;
+    text-align:end;
+}
+
+/* Divides Titles and Content */
 .divider{
     border-left:5px solid fuchsia;
     padding-left:2%;
