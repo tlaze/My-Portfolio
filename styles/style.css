@@ -56,30 +56,34 @@
     padding:0;
     border: 1px dotted black;
     display:flex;
-    flex-direction: row;
+    justify-content: center;
+    flex-flow: row wrap;
 
 }
+
 
 /* Elements inside the main container */
-.mainBoxes{
-    border:1px solid blue;
-    margin:0.5em;
-    padding:0.5em;
 
+
+
+.aboutMe{
+    order:1;
+    flex: 1 1 49%; /*Stretch/Shrink/Flex-Basis*/
+    border: 1px solid blue;
 }
 
-
+.myProjects{
+    order:2;
+    flex: 1 1 49%; /*Stretch/Shrink/Flex-Basis*/
+    border: 1px solid purple;
+}
 
 /* Contains 5 flexboxes describing work projects */
 .workContainer{
-    margin:0;
-    paddding:0;
     border:1px solid green;
 }
 
 /* Elements inside work container */
 .workBox{
-    margin:0.5em;
-    padding:0.5em;
     border:1px solid red;
 }
