@@ -1,26 +1,28 @@
-.navBar{   
+:root{
+    --navBG: rgb(49,52,61);
 }
 
 .flexBox{
     margin:0;
+    padding:0;
     height:50px;
     display:flex;
     flex-direction: row;
     align-items:center;
     justify-content: flex-end;
-    background-color: grey;;
+    background-color: var(--navBG);
 }
 
 .myName{
     font-size:35px;
+    padding-left: 30px;
     margin-right:auto;
     background-color: turquoise;
-    color:grey;
+    color:var(--navBG);
 }
 
 .navList{
     font-size:20px;
-    border:3px solid orange;
     padding: 0px 20px;
 }
 
