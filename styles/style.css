@@ -56,7 +56,7 @@
     display:flex;
     flex-basis:100%;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 
@@ -66,40 +66,48 @@
 /* About Me Row (Title and Paragraph) */
 .aboutMe{
     order:1;
+    /* border:1px dashed red; */
+    flex-basis: 100%;
 }
 
 /* Work Row (Title and Projects) */
 .myProjects{
     order:2;
+    flex-basis:100%;
 }
 
 /* Title Boxes */
 .sectionTitle{
-    flex-basis:10%;
-    margin:1px;
+    flex-basis:20%;
+    margin: 2%;
     border-right: 5px solid blue;
-    margin-top: 30px;
 
 }
 
 /* Content Boxes */
 .sectionContent{
-    flex-basis:80%;
+    flex-basis: 70%;
     text-align: start;
-    padding-left:2%;
+    text-justify:inter-word;
+    padding:2%;
 
 }
 
 /* Edits Text in Title Sections */
 .titleText{
-    margin-right: 10px;
+    margin-right: 2%;
     color:var(--titleFont);
     font-size: 2em;
     text-align:end;
 }
 
+.aboutMe{ 
+}
+
 .aboutMe p{
     padding-left:1%;
+
+    
 }
 
 /* Contains 5 flexboxes describing work projects */
@@ -121,7 +129,7 @@
  /* First and Largest Project Displayed */
 #mainProject{
     order:1;
-    flex-basis:96.5%;
+    flex-basis:90%;
     background-image:url(../images/pumpkin.jpeg);
     height: 600px;
     margin:1%;
@@ -131,7 +139,7 @@
 
 #cookieProject{
     background-image:url(../images/Cookie.jpeg);
-    flex-basis:47%;
+    flex-basis:43.5%;
     margin:1%;
     height:300px;
 
@@ -139,7 +147,7 @@
 
 #carrotProject{
     background-image:url(../images/Carrot.jpeg); 
-    flex-basis:47%;
+    flex-basis:43.5%;
     margin:1%;
     height:300px;
 
@@ -147,14 +155,14 @@
 
 #cupcakeProject{
     background-image:url(../images/Cupcake.jpeg);
-    flex-basis: 47%;
+    flex-basis: 43.5%;
     margin:1%;
     height:300px;
 }
 
 #potatoProject{
     background-image:url(../images/Potato.jpeg);
-    flex-basis: 47%;
+    flex-basis: 43.5%;
     margin:1%;
     height:300px;
 }
@@ -162,7 +170,6 @@
 
 .contactMe{
     order:3;
-
 
 }
 
@@ -181,4 +188,12 @@
 }
 
 .footerLink{
+}
+
+.workBox:hover{
+    border-color:red;
+}
+
+footer{
+    text-align: end;
 }
