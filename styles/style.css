@@ -57,7 +57,6 @@
     flex-basis:100%;
     flex-flow: row wrap;
     justify-content: center;
-
 }
 
 
@@ -67,13 +66,11 @@
 /* About Me Row (Title and Paragraph) */
 .aboutMe{
     order:1;
-    /* background-color:yellow; */
 }
 
 /* Work Row (Title and Projects) */
 .myProjects{
     order:2;
-    /* background-color:lightblue; */
 }
 
 /* Title Boxes */
@@ -81,6 +78,7 @@
     flex-basis:10%;
     margin:1px;
     border-right: 5px solid blue;
+    margin-top: 30px;
 
 }
 
@@ -89,7 +87,6 @@
     flex-basis:80%;
     text-align: start;
     padding-left:2%;
-
 
 }
 
@@ -128,6 +125,7 @@
     background-image:url(../images/pumpkin.jpeg);
     height: 600px;
     margin:1%;
+
     
 }
 
@@ -136,6 +134,7 @@
     flex-basis:47%;
     margin:1%;
     height:300px;
+
 }
 
 #carrotProject{
@@ -143,6 +142,7 @@
     flex-basis:47%;
     margin:1%;
     height:300px;
+
 }
 
 #cupcakeProject{
@@ -157,4 +157,28 @@
     flex-basis: 47%;
     margin:1%;
     height:300px;
+}
+
+
+.contactMe{
+    order:3;
+
+
+}
+
+.footerLinks{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    height:200px;
+    align-items: center;
+
+}
+
+.footerList{
+    font-size:25px;
+    margin-right:20px;
+}
+
+.footerLink{
 }
