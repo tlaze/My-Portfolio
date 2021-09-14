@@ -5,9 +5,9 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <title>Tom Lazore Portfolio</title>
 </head>
-
+<!-- Nav bar -->
 <header>
-    <nav class="navBar">
+    <nav>
         <ul class="flexBox">
             <li class="myName">Tom Lazore</li>
             <li class="navList"><a class="navLink" href="#">About Me</a></li>
@@ -19,23 +19,46 @@
 </header>
 
 <body>
-    <main>
-        <section class="imageBoard">
-            <h2><span>Cool Text Here!</span></h2>
-        </section>
+<!-- Main image under nav bar -->
+    <section class="imageBoard">
+        <h2><span>Cool Text Here!</span></h2>
+    </section>
 
+<!-- Flex box container with About Me and Work section -->
+    <main class="mainContainer">
         <article>
             About Me
         </article>
 
         <aside>
-            Work
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ipsa repellendus, laborum quam voluptatibus beatae veritatis accusantium numquam dolor animi placeat possimus qui necessitatibus eos unde totam fugit sunt. Mollitia?
+            </p>
         </aside>
 
+        <article>
+            Work
+        </article>
+
+        <!-- A container inside main container for work projects -->
         <aside>
-            Contact Me
+            <div class="workContainer">
+                <section class="workBox"></section>
+                <section class="workBox"></section>
+                <section class="workBox"></section>
+                <section class="workBox"></section>
+                <section class="workBox"></section>
+            </div>
         </aside>
+
 
     </main>
 </body>
+
+<!-- Contact Info -->
+<footer>
+    <aside>
+        Contact Me
+    </aside>
+</footer>
+
 </html>

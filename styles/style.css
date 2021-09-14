@@ -1,7 +1,8 @@
+/* variables */
 :root{
-    --navBG: rgb(49,52,61);
+    --navBG: rgb(49,52,61); /*variable for background color in nav bar*/
 }
-
+/* nav bar container */
 .flexBox{
     position:sticky;
     margin:0;
@@ -13,7 +14,7 @@
     justify-content: flex-end;
     background-color: var(--navBG);
 }
-
+/* Element positioned left in the nav bar */
 .myName{
     font-size:35px;
     padding-left: 35px;
@@ -21,16 +22,16 @@
     background-color: turquoise;
     color:var(--navBG);
 }
-
+/* Elements positioned to the right in the nav bar */
 .navList{
     font-size:25px;
     margin-right:20px;
 }
-
+/* Links in nav bar */
 .navLink{
     color:turquoise
 }
-
+/* Background Image and Text beneath navbar */
 .imageBoard{
     display:flex;
     justify-content: flex-end;
@@ -42,10 +43,19 @@
     position:relative;  
 
 }
-
+/* Text inside main image */
 .imageBoard span{
     color:var(--navBG);
     background-color:turquoise;
     margin-right:20px;
     padding:3px;
+}
+/* Contains 4 flexboxes: About me title, about me paragraph, work title, and work container  */
+.mainContainer{
+
+}
+
+/* Contains 5 flexboxes describing work projects */
+.workContainer{
+
 }
