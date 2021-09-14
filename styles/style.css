@@ -3,9 +3,10 @@
 }
 
 .flexBox{
+    position:sticky;
     margin:0;
     padding:0;
-    height:50px;
+    height:65px;
     display:flex;
     flex-direction: row;
     align-items:center;
@@ -15,15 +16,15 @@
 
 .myName{
     font-size:35px;
-    padding-left: 30px;
+    padding-left: 35px;
     margin-right:auto;
     background-color: turquoise;
     color:var(--navBG);
 }
 
 .navList{
-    font-size:20px;
-    padding: 0px 20px;
+    font-size:25px;
+    margin-right:20px;
 }
 
 .navLink{
@@ -31,5 +32,20 @@
 }
 
 .imageBoard{
-    border:5px solid red;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url(../images/imageBoard.jpg);
+    background-size: cover;
+    height:200px;
+    width:100%;
+    position:relative;  
+
+}
+
+.imageBoard span{
+    color:var(--navBG);
+    background-color:turquoise;
+    margin-right:20px;
+    padding:3px;
 }
