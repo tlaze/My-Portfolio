@@ -38,7 +38,7 @@
     display:flex;
     justify-content: space-between;
     align-items:flex-end;
-    background-image: url(../images/beach.jpeg);
+    background-image: url(../images/banner.jpeg);
     background-size:cover;
     background-repeat: no-repeat;
     height:250px;
@@ -70,8 +70,8 @@
     justify-content:center;
     margin:0;
     padding:0;
-    background-color:var(--navBG);
-    color:turquoise;
+    /* background-color:var(--navBG); */
+    /* color:turquoise; */
 }
 
 
@@ -155,18 +155,20 @@
     background-repeat: no-repeat;
     background-size:100% 100%;
     height: 350px;
-    margin:1%;
+    margin:1%;e
+    width:100px;
 
     
 }
-
+ /* Next 4 Projects  */
 #project2{
     background-image:url(../images/Otto2.JPG);
     flex-basis:46.5%;
     margin:1%;
     background-repeat: no-repeat;
     background-size:100% 100%;
-    height:200px;
+    height:auto;
+    width:100px;
 
 }
 
@@ -176,7 +178,8 @@
     margin:1%;
     background-repeat: no-repeat;
     background-size:100% 100%;
-    height:200px;
+    height:300px;
+    width:100px;
 
 }
 
@@ -186,7 +189,8 @@
     margin:1%;
     background-repeat: no-repeat;
     background-size:100% 100%;
-    height:200px;
+    height:300px;
+    width:100px;
 }
 
 #project5{
@@ -195,7 +199,8 @@
     margin:1%;
     background-repeat: no-repeat;
     background-size:100% 100%;
-    height:200px;
+    height:300px;
+    width:100px;
 }
 
 /* Puts contact me session to the bottom. 3rd priority */
@@ -208,9 +213,8 @@
     height:65px;
     display:flex;
     flex-direction: row;
-    background-color: var(--navBG);
+    /* background-color: var(--navBG); */
     flex-basis:100%;
-    align-items: center;
 
 }
 
@@ -222,6 +226,7 @@
 
 .footerLink{
     color:turquoise;
+    background-color: var(--navBG);
 }
 
 
@@ -253,13 +258,27 @@ footer{
 /* Changes fonts in contact me options. Also changes project boxes to fit small screen */
 @media screen and (max-width: 830px) {
     .footerLink{
-        font-size:15px;
+        font-size:16px;
+        padding:4px;
     }
     #project2, #project3, #project4, #project5{
         flex-basis:45%;
     }
 }
 /* Turns to columns on mobile screens. Adjustments made to font to fit screen */
+
+
+@media screen and (max-width: 692px) {
+    .footerLink{
+        font-size:13px;
+        padding:5px;
+    }
+}
+
+
+
+
+
 @media screen and (max-width: 673px) {
     .mainContainer{
         flex-direction:column;
@@ -288,6 +307,15 @@ footer{
 @media screen and (max-width: 675px){
     #project2, #project3, #project4, #project5{
         flex-basis:45.8%;
+    }
+
+    .flexBox{
+        height:50px;
+    }
+    
+    .footerLink{
+        padding:0;
+        margin:0;
     }
 }
 
