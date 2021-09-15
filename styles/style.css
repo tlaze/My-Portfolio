@@ -39,6 +39,8 @@
     justify-content: space-between;
     align-items:flex-end;
     background-image: url(../images/beach.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
     height:250px;
     flex-basis:100%;
 
@@ -82,13 +84,13 @@
     flex-basis: 100%;
 }
 
-/* Work Row (Title and Projects) */
+/* Work Row (Title and Content) */
 .myProjects{
     order:2;
     flex-basis:100%;
 }
 
-/* Title Boxes */
+/* Boxes describing the content */
 .sectionTitle{
     flex-basis:20%;
     margin: 2.5%;
@@ -100,7 +102,7 @@
 .sectionContent{
     flex-basis: 70%;
     text-align: start;
-    padding:2%;
+    padding:1%;
 
 }
 
@@ -108,7 +110,7 @@
 .titleText{
     margin-right: 3%;
     color:turquoise;
-    font-size: 2em;
+    font-size: 35px;
     text-align:end;
     flex-basis:100%;
     background-color: var(--navBG);
@@ -135,6 +137,7 @@
 
 }
 
+/* Name of project label */
 .workBox >*{
     color:var(--navBG);
     background-color:turquoise;
@@ -151,7 +154,7 @@
     background-image:url(../images/main-project.png);
     background-repeat: no-repeat;
     background-size:100% 100%;
-    height: 400px;
+    height: 350px;
     margin:1%;
 
     
@@ -197,31 +200,30 @@
 
 /* Puts contact me session to the bottom. 3rd priority */
 .contactMe{
-    order:3;   
+    order:3;  
 }
 
 .footerLinks{
-    position:sticky;
-    margin:0;
-    padding:0;
+    padding:50px;
     height:65px;
     display:flex;
     flex-direction: row;
-    align-items:center;
-    justify-content: space-between;
     background-color: var(--navBG);
     flex-basis:100%;
+    align-items: center;
 
 }
 
 .footerList{
-    font-size:25px;
-    margin-right:20px;
+    font-size:15px;
+    flex:0;
+    flex-basis:40%;
 }
 
 .footerLink{
     color:turquoise;
 }
+
 
 /* Gives fading effect over projects while hovering */
 .workBox:hover{
@@ -238,29 +240,27 @@ footer{
     #project2, #project3, #project4, #project5{
         flex-basis:46.5%;
     }
-    .footerLink{
-        font-size:.8em;
-    }
+
 }
 
-
+/* Changes project box sizes to fit in smaller screen */
 @media screen and (max-width: 965px) {
     #project2, #project3, #project4, #project5{
         flex-basis:46.25%;
     }
 }
 
-
-@media screen and (max-width: 828px) {
+/* Changes fonts in contact me options. Also changes project boxes to fit small screen */
+@media screen and (max-width: 830px) {
     .footerLink{
-        font-size:.6em;
+        font-size:15px;
     }
     #project2, #project3, #project4, #project5{
         flex-basis:45%;
     }
 }
-
-@media screen and (max-width: 650px) {
+/* Turns to columns on mobile screens. Adjustments made to font to fit screen */
+@media screen and (max-width: 673px) {
     .mainContainer{
         flex-direction:column;
     }
@@ -268,13 +268,26 @@ footer{
         background-color:var(--navBG);
         color:turquoise;
         text-align: center;
-    }
-    .footerLink{
-        font-size:.7em;
+        font-size:50px;
     }
     .sectionTitle{
         border-bottom:5px solid turquoise;
         border-right:none;
+    }
+    .myName{
+        font-size:20px;
+        margin-top:5px;
+    }
+    .navLink{
+        font-size: 16px;
+    }
+    #project2, #project3, #project4, #project5{
+        flex-basis:46.3%;
+    }
+}
+@media screen and (max-width: 675px){
+    #project2, #project3, #project4, #project5{
+        flex-basis:45.8%;
     }
 }
 
