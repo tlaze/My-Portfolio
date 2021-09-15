@@ -8,7 +8,7 @@
     position:sticky;
     margin:0;
     padding:0;
-    height:65px;
+    height:100px;
     display:flex;
     flex-direction: row;
     align-items:center;
@@ -40,7 +40,7 @@
     align-items:flex-end;
     background-image: url(../images/beach.jpeg);
     height:250px;
-    flex-basis:100%; 
+    flex-basis:100%;
 
 }
 
@@ -68,6 +68,8 @@
     justify-content:center;
     margin:0;
     padding:0;
+    background-color:var(--navBG);
+    color:turquoise;
 }
 
 
@@ -90,7 +92,7 @@
 .sectionTitle{
     flex-basis:20%;
     margin: 2.5%;
-    border-right: 5px solid var(--titleFont);
+    border-right: 5px solid turquoise;;
 
 }
 
@@ -105,10 +107,11 @@
 /* Edits Text in Title Sections */
 .titleText{
     margin-right: 3%;
-    color:var(--titleFont);
+    color:turquoise;
     font-size: 2em;
     text-align:end;
     flex-basis:100%;
+    background-color: var(--navBG);
 }
 
 
@@ -144,7 +147,7 @@
  /* First and Largest Project Displayed */
 #mainProject{
     order:1;
-    flex-basis:90%;
+    flex-basis:100%;
     background-image:url(../images/main-project.png);
     background-repeat: no-repeat;
     background-size:100% 100%;
@@ -156,7 +159,7 @@
 
 #project2{
     background-image:url(../images/Otto2.JPG);
-    flex-basis:43.5%;
+    flex-basis:46.5%;
     margin:1%;
     background-repeat: no-repeat;
     background-size:100% 100%;
@@ -166,7 +169,7 @@
 
 #project3{
     background-image:url(../images/Otto3.jpeg); 
-    flex-basis:43.5%;
+    flex-basis:46.5%;
     margin:1%;
     background-repeat: no-repeat;
     background-size:100% 100%;
@@ -176,7 +179,7 @@
 
 #project4{
     background-image:url(../images/Otto4.PNG);
-    flex-basis: 43.5%;
+    flex-basis: 46.5%;
     margin:1%;
     background-repeat: no-repeat;
     background-size:100% 100%;
@@ -185,7 +188,7 @@
 
 #project5{
     background-image:url(../images/Otto5.jpeg);
-    flex-basis: 43.5%;
+    flex-basis: 46.5%;
     margin:1%;
     background-repeat: no-repeat;
     background-size:100% 100%;
@@ -194,21 +197,30 @@
 
 /* Puts contact me session to the bottom. 3rd priority */
 .contactMe{
-    order:3;
+    order:3;   
 }
 
 .footerLinks{
+    position:sticky;
+    margin:0;
+    padding:0;
+    height:65px;
     display:flex;
-    flex-direction:row;
-    justify-content: space-evenly;
-    align-items: center;
-    height:200px;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    background-color: var(--navBG);
+    flex-basis:100%;
 
 }
 
+.footerList{
+    font-size:25px;
+    margin-right:20px;
+}
+
 .footerLink{
-    color:var(--titleFont);
-    font-size: 1.5em;
+    color:turquoise;
 }
 
 /* Gives fading effect over projects while hovering */
@@ -220,3 +232,51 @@
 footer{
     text-align: end;
 }
+
+/* Fixes portfolio and shrinks footer link fonts while shrinking the page */
+@media screen and (max-width: 985px) {
+    #project2, #project3, #project4, #project5{
+        flex-basis:46.5%;
+    }
+    .footerLink{
+        font-size:.8em;
+    }
+}
+
+
+@media screen and (max-width: 965px) {
+    #project2, #project3, #project4, #project5{
+        flex-basis:46.25%;
+    }
+}
+
+
+@media screen and (max-width: 828px) {
+    .footerLink{
+        font-size:.6em;
+    }
+    #project2, #project3, #project4, #project5{
+        flex-basis:45%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .mainContainer{
+        flex-direction:column;
+    }
+    .titleText{
+        background-color:var(--navBG);
+        color:turquoise;
+        text-align: center;
+    }
+    .footerLink{
+        font-size:.7em;
+    }
+    .sectionTitle{
+        border-bottom:5px solid turquoise;
+        border-right:none;
+    }
+}
+
+
+    
