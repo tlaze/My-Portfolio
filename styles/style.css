@@ -265,20 +265,28 @@ footer{
         flex-basis:45%;
     }
 }
+
 /* Turns to columns on mobile screens. Adjustments made to font to fit screen */
-
-
 @media screen and (max-width: 692px) {
     .footerLink{
         font-size:13px;
         padding:5px;
     }
 }
+@media screen and (max-width: 675px){
+    #project2, #project3, #project4, #project5{
+        flex-basis:46;
+    }
 
-
-
-
-
+    .flexBox{
+        height:50px;
+    }
+    
+    .footerLink{
+        padding:0;
+        margin:0;
+    }
+}
 @media screen and (max-width: 673px) {
     .mainContainer{
         flex-direction:column;
@@ -301,23 +309,8 @@ footer{
         font-size: 16px;
     }
     #project2, #project3, #project4, #project5{
-        flex-basis:46.3%;
-    }
-}
-@media screen and (max-width: 675px){
-    #project2, #project3, #project4, #project5{
         flex-basis:45.8%;
     }
-
-    .flexBox{
-        height:50px;
-    }
-    
-    .footerLink{
-        padding:0;
-        margin:0;
-    }
 }
-
 
     
