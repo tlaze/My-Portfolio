@@ -14,8 +14,7 @@ Media Queries
 
 ##  Screenshot
 
-
-<img width="567" alt="Screen Shot 2021-09-15 at 10 58 17" src="https://user-images.githubusercontent.com/47471193/133458067-05784913-37c3-4756-9043-ded3cac6d7fe.png">
+<img width="493" alt="Screen Shot 2021-09-18 at 14 27 06" src="https://user-images.githubusercontent.com/47471193/133900455-7a115533-f5df-4a2a-9b98-9e6b22661ed0.png">
 
 
 ## Link to Live Application
