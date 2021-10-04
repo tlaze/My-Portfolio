@@ -16,6 +16,19 @@
     background-color: var(--navBG);
     flex-basis:100%;
 }
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+aside p{
+    background-color: var(--navBG);
+    color:turquoise;
+    letter-spacing:1px;
+    padding:10px;
+
+}
+
+
 /* Element positioned left in the nav bar */
 .myName{
     font-size:35px;
@@ -56,8 +69,8 @@
 }
 /* Text inside main image */
 .imageBoard span{
-    color:var(--navBG);
-    background-color:turquoise;
+    color:turquoise;
+    background-color:var(--navBG);
     margin-right:20px;
     padding:3px;
 }
@@ -141,8 +154,8 @@
 .workBox >*{
     color:var(--navBG);
     background-color:turquoise;
-    border:1px solid var(--titleFont);
-    height:50px;
+    border:2px solid var(--titleFont);
+    height:20%;
     width:100px;
 
 }
@@ -209,24 +222,24 @@
 }
 
 .footerLinks{
-    padding:50px;
-    height:65px;
+    padding:10%;
+    height:5px;
     display:flex;
     flex-direction: row;
-    /* background-color: var(--navBG); */
     flex-basis:100%;
 
 }
 
 .footerList{
-    font-size:15px;
     flex:0;
-    flex-basis:40%;
+    flex-basis:30%;
 }
 
 .footerLink{
     color:turquoise;
     background-color: var(--navBG);
+    font-size:30px;
+    margin:10px;
 }
 
 
@@ -259,7 +272,6 @@ footer{
 @media screen and (max-width: 830px) {
     .footerLink{
         font-size:16px;
-        padding:4px;
     }
     #project2, #project3, #project4, #project5{
         flex-basis:45%;
@@ -270,7 +282,6 @@ footer{
 @media screen and (max-width: 692px) {
     .footerLink{
         font-size:13px;
-        padding:5px;
     }
 }
 @media screen and (max-width: 675px){
@@ -283,8 +294,8 @@ footer{
     }
     
     .footerLink{
-        padding:0;
-        margin:0;
+        margin:10px;
+        font-size:20px;
     }
 }
 @media screen and (max-width: 673px) {
