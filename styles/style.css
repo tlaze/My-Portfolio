@@ -17,14 +17,13 @@
     flex-basis:100%;
 }
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Courier New', Courier, monospace;
 }
 
 aside p{
     background-color: var(--navBG);
     color:turquoise;
-    letter-spacing:1px;
-    padding:10px;
+    padding:7px;
 
 }
 
@@ -164,7 +163,7 @@ aside p{
 #mainProject{
     order:1;
     flex-basis:100%;
-    background-image:url(../images/Weather-Dashboard-img.png);
+    background-image:url(../images/Poke-Battle-img.png);
     background-repeat: no-repeat;
     background-size:100% 100%;
     height: 350px;
@@ -175,7 +174,7 @@ aside p{
 }
  /* Next 4 Projects  */
 #project2{
-    background-image:url(../images/Poke-Battle-img.png);
+    background-image:url(../images/Weather-Dashboard-img.png);
     flex-basis:46.5%;
     margin:1%;
     background-repeat: no-repeat;
@@ -238,7 +237,7 @@ aside p{
 .footerLink{
     color:turquoise;
     background-color: var(--navBG);
-    font-size:30px;
+    font-size:25px;
     margin:10px;
 }
 
