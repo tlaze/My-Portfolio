@@ -1,22 +1,15 @@
-# tom-lazore-portfolio
+# My-Portfolio
 
-##  Homework 2 for Georgia Tech Coding Bootcamp
+Works by and Info of Tom Lazore
 
-Webpage created using HTML and CSS displaying my Portfolio
+# Description
 
-##  Class Topics Used in Code
-
-Flex
-
-PseudoSelectors
-
-Media Queries
+Webpage created using HTML, and Advanced CSS technologies to display information a bio, images, and previous projects that I have created.
 
 ##  Screenshot
 
 <img width="493" alt="Screen Shot 2021-09-18 at 14 27 06" src="https://user-images.githubusercontent.com/47471193/133900455-7a115533-f5df-4a2a-9b98-9e6b22661ed0.png">
 
-
 ## Link to Live Application
 
-https://tlaze.github.io/tom-lazore-portfolio/
+https://tlaze.github.io/My-Portfolio/
