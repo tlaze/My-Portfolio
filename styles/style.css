@@ -146,6 +146,7 @@ aside p{
     justify-content: flex-start;
     align-items: flex-end;
     padding-bottom:30px;
+    overflow-wrap: break-word;
 
 }
 
@@ -163,7 +164,7 @@ aside p{
 #mainProject{
     order:1;
     flex-basis:100%;
-    background-image:url(../images/Poke-Battle-img.png);
+    background-image:url(../images/neveralone.png);
     background-repeat: no-repeat;
     background-size:100% 100%;
     height: 350px;
@@ -185,7 +186,7 @@ aside p{
 }
 
 #project3{
-    background-image:url(../images/Workday-Scheduler-img.png); 
+    background-image:url(../images/techblog.png); 
     flex-basis:46.5%;
     margin:1%;
     background-repeat: no-repeat;
@@ -196,7 +197,7 @@ aside p{
 }
 
 #project4{
-    background-image:url(../images/Code-Quiz-img.png);
+    background-image:url(../images/Poke-Battle-img.png);
     flex-basis: 46.5%;
     margin:1%;
     background-repeat: no-repeat;
