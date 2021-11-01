@@ -1,6 +1,6 @@
 # My-Portfolio
 
-Works by and Info of Tom Lazore
+Works by Tom Lazore
 
 # Description
 
