@@ -4,7 +4,7 @@ Works by Tom Lazore
 
 # Description
 
-Webpage created using HTML, and Advanced CSS technologies to display information a bio, images, and previous projects that I have created.
+Webpage created using HTML, and Advanced CSS technologies to display a bio, images, and previous projects that I have created.
 
 ##  Screenshot
 
